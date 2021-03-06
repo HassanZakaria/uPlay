@@ -10,6 +10,9 @@ const Artists = () => {
   return (
     <div className="artists">
       Top Artists:
+      <button onClick={() => setTimeRange("long_term")}>AllTime</button>
+      <button onClick={() => setTimeRange("medium_term")}>Six Months</button>
+      <button onClick={() => setTimeRange("short_term")}>One Month</button>
       {isLoading ? (
         <CircularProgress />
       ) : (
